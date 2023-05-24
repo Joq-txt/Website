@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Examen December Oefenen</title>
+
+
+<style>
+
+body
+{
+background-color: aquamarine;
+}
+
+#ContainerRondAlles
+{
+width: 1010; 
+height: 1010;
+margin-left: 250px;
+}
+
+#header
+{
+background-color: darkgreen;
+width: 1006px;
+height: 80px;
+font-size: 24px;
+color:white;
+font-weight: bold;
+text-align: center;
+line-height: 70px;
+}
+
+#img1
+{
+margin: 5px;
+width: 65px;
+height: 65px;
+float:left;
+}
+
+#img2
+{
+margin: 5px;
+width: 65px;
+height: 65px;
+float: right;
+}
+
+#ul1
+{
+margin: 0px 0px -15px 0px;
+width: 1008px;
+text-align: center;
+padding-left: 0px;
+padding-top: 1px;
+padding-bottom: 0px;
+margin-left: 0px;
+}
+
+#ul1 li
+{
+list-style-type:none;
+display: inline-block;
+border: 1px solid lightgreen;
+background-color: #333;
+width: 196px;
+height: 60px;
+line-height: 60px;
+margin-top: 0px;
+}
+
+#ul1 a
+{
+text-decoration:none;
+color: white;
+}
+
+#ul1 li a:hover
+{
+color:yellow;
+}
+
+#ul1 li:hover
+{
+background-color: darkgreen;
+}
+
+#ul1 ul
+{
+display:none;
+color:white;
+}
+
+#ul1 li:hover ul
+{
+display:block;
+position: absolute;
+top: 153px;
+left: 219px;
+}
+
+#ul1 li ul li
+{
+display:block;
+width: 180px;
+}
+
+#container
+{
+margin-top: 20px;
+margin-left: 185px;
+border: 3px solid white;
+background-color: lightgreen;
+width: 820px;
+height: 800px;
+}
+
+tr:first-child
+{
+width: 820px;
+height: 100px;
+background-color: greenyellow;
+font-family: courier new;
+line-height: 1.5;
+padding: 5px;
+}
+
+#tdlinks, #tdrechts
+{
+width: 10%;
+border-left: 3px solid blue;
+border-right: 3px dashed orange;
+border-top: 3px solid green;
+border-bottom: 3px dotted green;
+}
+
+#tdlinks
+{
+background-image:url(images/ui.jpg);
+background-size: 180%;
+width: 10px;
+}
+
+table
+{
+width:820px;
+}
+
+td
+{
+border: 1px solid purple;
+}
+
+#tdrechts
+{
+background-color: pink;
+width: 10px;
+}
+
+#tdrechts img
+{
+width:82px;
+height:82px;
+}
+
+#box1, #box2, #box3, #box4
+{
+width: 196px;
+height: 157px;
+border: 2px solid black;
+background-color: white;
+float:left;
+margin: 5px;
+}
+
+h4
+{
+background-color:yellow;
+width:155px;
+margin: 4px;
+font-size: 13px;
+}
+
+#box1
+{
+background-color: darkgreen;
+}
+
+#box2
+{
+background-color: orange;
+}
+
+#box3
+{
+background-color: purple;
+}
+
+#box4
+{
+background-color: red;
+margin-left: 216px;
+}
+
+.BlauwTBox
+{
+color: blue;
+}
+
+#AA
+{
+color: red;
+}
+
+#Diesel a
+{
+color: black;
+}
+
+#Benzine a
+{
+color: green;
+}
+
+h4:first-letter
+{
+background-color: white;
+color: red;
+}
+
+#geeltd
+{
+background-color: yellow;
+height: 340px;
+}
+
+#rood1
+{
+width: 120px;
+height: 120px;
+border: 1px solid black;
+background-color:red;
+margin-left: 0px;
+float:left;
+}
+
+#blauw1
+{
+width: 70px;
+height: 70px;
+border: 1px solid black;
+background-color: blue;
+opacity: 0.5;
+margin-left: -122px;
+float:left;
+}
+
+#rood2
+{
+width: 110px;
+height: 110px;
+border: 1px solid black;
+background-color:red;
+margin-left: 15px;
+margin-top: 10px;
+float:left;
+}
+
+#blauw2
+{
+width: 80px;
+height: 80px;
+border: 1px solid black;
+background-color: blue;
+opacity: 0.5;
+margin-left: -160px;
+float:left;
+}
+
+#rood3
+{
+width: 100px;
+height: 100px;
+border: 1px solid black;
+background-color:red;
+margin-left: 15px;
+margin-top: 20px;
+float:left;
+}
+
+#blauw3
+{
+width: 90px;
+height: 90px;
+border: 1px solid black;
+background-color: blue;
+opacity: 0.5;
+margin-left: -180px;
+float:left;
+}
+
+#rood4
+{
+width: 90px;
+height: 90px;
+border: 1px solid black;
+background-color:red;
+margin-left: 15px;
+margin-top: 30px;
+float:left;
+}
+
+#blauw4
+{
+width: 100px;
+height: 100px;
+border: 1px solid black;
+background-color: blue;
+opacity: 0.5;
+margin-left: -180px;
+float:left;
+}
+
+#rood5
+{
+width: 80px;
+height: 80px;
+border: 1px solid black;
+background-color:red;
+margin-left: 15px;
+margin-top: 40px;
+float:left;
+}
+
+#blauw5
+{
+width: 110px;
+height: 110px;
+border: 1px solid black;
+background-color: blue;
+opacity: 0.5;
+margin-left: -160px;
+float:left;
+}
+
+#rood6
+{
+width: 70px;
+height: 70px;
+border: 1px solid black;
+background-color:red;
+margin-left: 15px;
+margin-top: 50px;
+float:left;
+}
+
+#blauw6
+{
+width: 120px;
+height: 120px;
+border: 1px solid black;
+background-color: blue;
+opacity: 0.5;
+margin-left: -122px;
+float:left;
+}
+
+#zwart
+{
+clear:left;
+margin: 30px auto;
+width: 120px;
+height:120px;
+padding-top: 10px;
+}
+
+#zwart1
+{
+width: 30px;
+height: 30px;
+background-color: black;
+margin: 15px;
+float: left;
+}
+
+#zwart2
+{
+width: 60px;
+height: 60px;
+background-color: black;
+margin: 0px;
+margin-left: 60px;
+}
+
+#zwart3
+{
+width: 60px;
+height: 60px;
+background-color: black;
+margin: 0px;
+margin-left: 0px;
+}
+
+#zwart4
+{
+width: 30px;
+height: 30px;
+background-color: black;
+margin: -45px;
+margin-left: 75px;
+}
+
+#footer
+{
+color:white;
+width: 1010px;
+height: 30px;
+font-weight:bold;
+font-size: 15px;
+background-color: darkgreen;
+text-align: center;
+padding-top:10px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="ContainerRondAlles">
+
+<div id="header">
+
+<img id="img1" src="images/ui.jpg">
+<img id="img2" src="images/ui.jpg">
+5INF - Examen december 2022 - Chaybon Verlooy
+
+
+</div>
+
+
+
+<ul id="ul1">
+
+<li> <a href="#"> Home </a> 
+<ul>
+<li> Admin </li>
+<li> Beheer </li>
+<li> Logboek </li>
+<li> Tools</li>
+</ul>
+</li>
+<li> <a href="#">Yahoo </a></li>
+<li> <a href="#">Document </a></li>
+<li> <a href="#">Afbeelding </a></li>
+<li> <a href="#">Filmpje </a></li>
+
+</ul>
+
+
+<div id="container">
+
+<table>
+<tr>
+	<td colspan="3">
+
+	Colspan 3, geen paragraaf. Omdat het eerste afstamming is: achtergrond greenyellow, lettertype courier new,
+	padding 5px en Deze cel van de tabel overspant de drie originele. De tekst heeft een lijnhoogte van 1,5 en staat niet in een paragraaf.
+	
+	</td>
+
+
+</tr>
+<tr>
+	<td id="tdlinks" rowspan="2">
+	
+	Deze cel overspant net zoals die aan de overkant, twee rijen. Beide hebben zelfde
+	opmaak met css: boord: 5px, lijnkleur en -stijl zijn verschillend per kant
+	
+	</td>
+
+
+<td>
+
+<div id="box1">
+
+	<h4>
+	Box 1 - OPDRACHT:
+	</h4>
+
+</div>
+
+<div id="box2">
+
+	<h4>
+	Box 2 - GENESTE UL
+	</h4>
+
+<ul type="none">
+<li class="BlauwTBox">Auto</li>
+<li id="Diesel"><a href="#">Diesel</a>
+<ul type="none">
+<li id="AA">AA</li>
+<li id="Benzine"><a href="#">Benzine</a></li>
+</ul>
+</li>
+<li class="BlauwTBox">Fiets</li>
+</ul>	
+
+</div>
+
+<div id="box3">
+
+	<h4>
+	Box 3 - CSS UL IN BOX 2:
+	</h4>
+
+</div>
+
+
+<div id="box4">
+
+	<h4>
+	Box 4 - EXTRA INFO:
+	</h4>	
+
+</div>
+
+
+</td>
+
+
+<td id="tdrechts" rowspan="2">
+
+<img src="images/ui.jpg">
+<br>
+De ui aan deze kant staat binnen de html-code , 
+de andere is een achtergrond-afbeelding.
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<tr>
+
+<td colspan="2" id="geeltd">
+Deze cel heeft het attribuut "alt". Deze combinatie in je css, zorgt voor de gele achtergrond 
+van deze cel.
+<fieldset> <legend> Cel met div-fantasie... Positioneren maar ... <strong>GOOD LUCK!</strong> </legend> 
+
+<div id="rood1"> </div>
+<div id="blauw1"> </div>
+
+<div id="rood2"> </div>
+<div id="blauw2"> </div>
+
+<div id="rood3">  </div>
+<div id="blauw3"> </div>
+
+<div id="rood4"> </div>
+<div id="blauw4"> </div>
+
+<div id="rood5"> </div>
+<div id="blauw5"> </div>
+
+<div id="rood6"> </div>
+<div id="blauw6"> </div>
+
+
+
+<div id="zwart">
+
+<div id="zwart1"> </div>
+<div id="zwart2"> </div>
+<div id="zwart3"> </div>
+<div id="zwart4"> </div>
+
+
+</div>
+
+
+</fieldset>
+
+</td>
+
+<td>
+
+In de cel links staan meerdere divs naast of in elkaar,
+<strong>Er word geen gebruik gemaakt van absolute of relative</strong>
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+<div id="footer">
+
+FOOTER - Ivo Goyens - Examen December 2022 - 5INF
+
+</div>
+
+</div>
+
+
+</body>
+</html>
